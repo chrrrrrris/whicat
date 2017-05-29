@@ -1,0 +1,13 @@
+MANIFEST.in
+WHICAT/app.py
+WHICAT/static/style.css
+WHICAT/templates/checklist-Q1.html
+WHICAT/templates/index.html
+WHICAT/templates/layout.html
+WHICAT/templates/login.html
+WHICAT/templates/show_entries.html
+whicat.egg-info/PKG-INFO
+whicat.egg-info/SOURCES.txt
+whicat.egg-info/dependency_links.txt
+whicat.egg-info/requires.txt
+whicat.egg-info/top_level.txt

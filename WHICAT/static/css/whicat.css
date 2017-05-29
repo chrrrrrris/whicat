@@ -1,0 +1,181 @@
+/* ---------------------------------
+	Typography	
+------------------------------------*/
+
+@font-face {
+    font-family: OpenSans;
+    src: url(open_sans_regular.ttf);
+}
+@font-face {
+    font-family: SpecialElite;
+    src: url(special_elite.ttf);
+}
+@font-face {
+    font-family: Slabo;
+    src: url(slabo.ttf);
+}
+
+body {
+	font-family: OpenSans, sans-serif;
+}
+.cover-heading {
+	font-family: SpecialElite, cursive;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Slabo, serif;
+}
+.jumbotron p, li {
+	font-size: 16px;
+}
+.tab-content li {
+	font-size: 14px;
+}
+footer {
+	font-family: 'Times New Roman', serif;
+	font-size: 12px;
+}
+
+
+/* ---------------------------------
+	Colours	
+------------------------------------*/
+
+.jumbotron {
+	background-color: #B2FF4D;	/* apple green */
+}
+.radio-btn {
+	background-color: #409EFE;	/* mid blue */	
+}
+div > img.photo {
+    box-shadow: 2px 2px 5px #8c8c8c;
+}
+
+/* iframe Panel Heading*/
+.panel-default>.panel-heading {
+	background-color: #B2FF4D;	/* apple green */	
+}
+
+.panel-default {
+	background-color: #C0C0C0;	/* silver */	
+}
+
+footer {
+	background-color: #D3D3D3;
+}
+/* ---------------------------------
+	Navbar	
+------------------------------------*/
+
+/* Icon padding in navbar */
+.navbar-brand {
+    padding: 0px 15px;
+}
+/* Navbar colors*/
+.navbar {
+	background-color: #fff;
+    box-shadow: 0px 2px 5px #8c8c8c;
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #B2FF4D;	/* apple green */
+}
+
+/* ---------------------------------
+	Page Body	
+------------------------------------*/
+
+section {
+	padding: 60px 0 60px;
+}
+
+/* ---------------------------------
+	Header	
+------------------------------------*/
+
+/* Home page primary CTA button*/
+.btn {
+  margin: 20px auto 0px;
+}
+
+/* Radio buttons (mobile viewport) */
+.radio-btn {
+    margin: 10px 10px 10px 0;
+	padding: 8px 16px 8px 16px;
+	border-radius: 0;
+	color: black;
+}
+
+/* Radio buttons & bookmark spacing (desktop viewport) */
+@media (min-width: 768px ) {
+.row {
+    position: relative;
+	}
+.bottom-align-text {
+	position: absolute;
+    bottom: 20px;
+    right: 0;
+	}
+ .radio-btn {
+    margin: 20px 20px 20px 0;
+	} 
+}
+
+/* ---------------------------------
+	Top Section
+------------------------------------*/
+
+/* Hints & Examples tabs */
+.tab-pane section {
+	padding: 10px 0 10px;
+}
+
+/* Reload iframe button on Question page */
+.panel-heading {
+    position: relative;
+}
+.panel-title input {
+	position: absolute;
+    right: 16px;
+	bottom: 6px;
+}
+
+
+/* ---------------------------------
+	Images
+------------------------------------*/
+
+img.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+/* ---------------------------------
+	Footer
+------------------------------------*/
+footer {
+	padding: 20px 0 20px;
+	margin:  60px 0 0 0; 
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,3 @@
+graft WHICAT/templates
+graft WHICAT/static
+graft WHICAT/schema.sql
