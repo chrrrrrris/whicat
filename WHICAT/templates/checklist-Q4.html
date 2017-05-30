@@ -11,7 +11,7 @@
 
     <!-- Bootstrap -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-	<script src="/stiatc/js/jquery-3.2.1.js"></script>
+	<script src="/static/js/jquery-3.2.1.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
 
     <!-- WHICAT -->
@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="index.html"><img alt="Whicat logo" src="/static/images/microscope-transparent-sml.png"/></a>
+          <a class="navbar-brand" href="/index"><img alt="Whicat logo" src="/static/images/microscope-transparent-sml.png"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -82,8 +82,8 @@
 					</form>
 				</div>
 				<div class="col-md-2 bottom-align-text">
-					<!--<a href="#iframe-Q1">View Website</a>-->
-					<a href="/checklist/question/12" class="btn btn-default">Next Question</a>
+					<!--<a href="#iframe-Q2">View Website</a>-->
+					<a href="/checklist/question/5" class="btn btn-default">Next Question</a>
 
 				</div>
 			</div>
@@ -109,6 +109,12 @@
 			</div>
 			<div role="tabpanel" class="tab-pane" id="examples">
 				<section>
+					<p>A good example is <a href="https://medlineplus.gov/woundsandinjuries.html" target="_blank">US National Library of Medicine</a>.
+					This is a government website that provides information and results of research for consumers.</p> 
+				</section>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="examples">
+				<section>
 					<p>A good example is <a href="https://medlineplus.gov/woundsandinjuries.html" target="_blank"> US National Library of Medicine </a> This is a government website providing information and results of research for consumers.</p> 
 				</section>
 			</div>
@@ -126,7 +132,7 @@
 				</div>
 				<div class="panel-body">
 
-					<iframe height="600px" width="100%" src="http://www.mydr.com.au/respiratory-health/common-cold">
+					<iframe height="600px" width="100%" src='{{ name }}'>
 					<p>Your browser does not support iframes.</p>
 					</iframe>
 

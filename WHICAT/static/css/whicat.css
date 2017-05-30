@@ -24,6 +24,9 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	font-family: Slabo, serif;
 }
+.checklistComplete {
+	color: white;
+}
 .jumbotron p, li {
 	font-size: 16px;
 }
@@ -43,8 +46,12 @@ footer {
 .jumbotron {
 	background-color: #B2FF4D;	/* apple green */
 }
+.checklistComplete {
+	background-image: url("microscope-with-medical-high-tech-science-abstract-background.jpg");	/* microscope */
+}
 .radio-btn {
-	background-color: #409EFE;	/* mid blue */	
+	background-color: #409EFE;	/* mid blue */
+	color: #000000	
 }
 div > img.photo {
     box-shadow: 2px 2px 5px #8c8c8c;
@@ -105,7 +112,6 @@ section {
     margin: 10px 10px 10px 0;
 	padding: 8px 16px 8px 16px;
 	border-radius: 0;
-	color: black;
 }
 
 /* Radio buttons & bookmark spacing (desktop viewport) */

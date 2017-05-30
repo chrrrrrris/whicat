@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="index.html"><img alt="Whicat logo" src="/static/images/microscope-transparent-sml.png"/></a>
+          <a class="navbar-brand" href="/index"><img alt="Whicat logo" src="/static/images/microscope-transparent-sml.png"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -63,25 +63,21 @@
 					<h2>Are the aims of the website clear?</h2>
 					<form action="/process" method="POST">
 						<div class="btn-group" data-toggle="buttons" color = "#000000" >
-
 							<label class="btn btn-primary radio-btn">
-
-
-							<input type="radio" name="Q1" id="Q1-A1" autocomplete="off" value ="Not clear" > Not clear
-                                
-							</label> 
-							<label class="btn btn-primary radio-btn">
-								<input type="radio" name="Q1" id="Q1-A2" autocomplete="off" value = "Sort of clear"> Sort of clear
+								<input type="radio" name="Q1" id="Q1-A1" autocomplete="off"> No
 							</label>
 							<label class="btn btn-primary radio-btn">
-								<input type="radio" name="Q1" id="Q1-A3" autocomplete="off" value = "Can't decide"> Can't decide
+								<input type="radio" name="Q1" id="Q1-A2" autocomplete="off"> Not really
+							</label>
+							<label class="btn btn-primary radio-btn">
+								<input type="radio" name="Q1" id="Q1-A3" autocomplete="off"> Can't decide
 							</label>
 
 							<label class="btn btn-primary radio-btn">
-								<input type="radio" name="Q1" id="Q1-A4" autocomplete="off" value = "Mostly clear"> Mostly clear
+								<input type="radio" name="Q1" id="Q1-A4" autocomplete="off"> Seems ok
 							</label>
 							<label class="btn btn-primary radio-btn">
-								<input type="radio" name="Q1" id="Q1-A5" autocomplete="off" value = "Very clear"> Very Clear
+								<input type="radio" name="Q1" id="Q1-A5" autocomplete="off"> Yes
 							</label>
 						</div>
                          <input type="submit" value="Submit!">
@@ -133,11 +129,11 @@
 	
 			<div class="panel panel-default" id="iframe-Q1">
 				<div class="panel-heading">
-					<h3 class="panel-title"><strong>Health Website:</strong> www.mydr.com.au/respiratory-health/common-cold <input type='image' src="/static/images/glyphicons-82-refresh-lightened.png" onclick="self.location.reload();">Refresh Iframe</h3>
+					<h3 class="panel-title"><strong>Health Website:</strong> {{ title }} <input type='image' src="/static/images/glyphicons-82-refresh-lightened.png" onclick="self.location.reload();"></h3>
 				</div>
 				<div class="panel-body">
 
-					<iframe height="600px" width="100%" src="http://www.mydr.com.au/respiratory-health/common-cold">
+					<iframe height="600px" width="100%" src='{{ name }}'>
 					<p>Your browser does not support iframes.</p>
 					</iframe>
 

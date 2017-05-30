@@ -55,29 +55,93 @@
 	</nav>
 
 <!-- Header -->
-	<div class="jumbotron checklistComplete">
+	<div class="jumbotron">
 		<div class="container">
-			<section>
-				<div class="row">
-					<div class="col-md-10">
-						<h1>Checklist Complete</h1>
-					</div>
+			<div class="row">
+				<div class="col-md-10">
+					<h1>Question #8</h1>
+					<h2>Does the website's information match information from other sources?</h2>
+					<form>
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary radio-btn">
+								<input type="radio" name="Q1" id="Q1-A1" autocomplete="off"> No
+							</label>
+							<label class="btn btn-primary radio-btn">
+								<input type="radio" name="Q1" id="Q1-A2" autocomplete="off"> Not really
+							</label>
+							<label class="btn btn-primary radio-btn">
+								<input type="radio" name="Q1" id="Q1-A3" autocomplete="off"> Can't decide
+							</label>
+
+							<label class="btn btn-primary radio-btn">
+								<input type="radio" name="Q1" id="Q1-A4" autocomplete="off"> Seems ok
+							</label>
+							<label class="btn btn-primary radio-btn">
+								<input type="radio" name="Q1" id="Q1-A5" autocomplete="off"> Yes
+							</label>
+						</div>
+					</form>
 				</div>
-			</section>
+				<div class="col-md-2 bottom-align-text">
+					<!--<a href="#iframe-Q2">View Website</a>-->
+					<a href="/checklist/question/9" class="btn btn-default">Next Question</a>
+
+				</div>
+			</div>
 		</div>
 	</div>
 
+<!-- Top Section -->
+    <div class="container">
+		<section>
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#hints" aria-controls="hints" role="tab" data-toggle="tab">Hints</a></li>
+			<li role="presentation"><a href="#examples" aria-controls="examples" role="tab" data-toggle="tab">Examples</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="hints">
+				<section>
+					<p>If possible, check the information with a website of a government or non-profit organisation.</p>
+                    <p>Always ask for medical advice from a qualified health professional.</p>
+
+				</section>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="examples">
+				<section>
+					<p>A good example is <a href="http://www.nhs.uk/conditions/depression/Pages/Introduction.aspx" target="_blank">National Health Service's Choices</a>. (NHS)
+					The NHS advises consumers to see their doctor if they think they have the condition described.</p> 
+				</section>
+			</div>
+		  </div>
+		</section>	
+	</div>
 
 <!-- Mid Section -->
 
 	<div class="container">
+	
+			<div class="panel panel-default" id="iframe-Q8">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Health Website:</strong> www.mydr.com.au/respiratory-health/common-cold <input type='image' src="/static/images/glyphicons-82-refresh-lightened.png" onclick="self.location.reload();" /></h3>
+				</div>
+				<div class="panel-body">
 
-			<div class="row">
-				<div class="col-md-10">
-					<h2>Congratulations you completed the checklist.</h2>
-				</div>	
+					<iframe height="600px" width="100%" src='{{ name }}'>
+					<p>Your browser does not support iframes.</p>
+					</iframe>
+
+				</div>
 			</div>
+		
 
+		<div class="col-md-10">
+		</div>
+		<div class="col-md-2">
+			<a href="#top">Back to Top</a>
+		</div>
 	</div>
 
 <!-- Footer -->

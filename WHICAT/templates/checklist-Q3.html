@@ -12,7 +12,7 @@
     <!-- Bootstrap -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<script src="/static/js/jquery-3.2.1.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
 
     <!-- WHICAT -->
 	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px|Special+Elite" rel="stylesheet">-->
@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="index.html"><img alt="Whicat logo" src="/static/images/microscope-transparent-sml.png"/></a>
+          <a class="navbar-brand" href="/index"><img alt="Whicat logo" src="/static/images/microscope-transparent-sml.png"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -60,7 +60,7 @@
 			<div class="row">
 				<div class="col-md-10">
 					<h1>Question #3</h1>
-					<h2>Are the authors qualified to give health information?</h2>
+					<h2>Are the authors qualified to give health information? </h2>
 					<form>
 						<div class="btn-group" data-toggle="buttons">
 							<label class="btn btn-primary radio-btn">
@@ -82,7 +82,7 @@
 					</form>
 				</div>
 				<div class="col-md-2 bottom-align-text">
-					<!--<a href="#iframe-Q1">View Website</a>-->
+					<!--<a href="#iframe-Q2">View Website</a>-->
 					<a href="/checklist/question/4" class="btn btn-default">Next Question</a>
 
 				</div>
@@ -117,6 +117,12 @@
 					develop and review all content’.</p> 
 				</section>
 			</div>
+			<div role="tabpanel" class="tab-pane" id="examples">
+				<section>
+					<p>A good <strong>.gov</strong> example is <a href="http://www.cdc.gov" target="_blank">Centers for Disease Control and Prevention</a>. (CDC)
+					The CDC is a part of the United States of America's Department of Health and Human Services.</p> 
+				</section>
+			</div>
 		  </div>
 		</section>	
 	</div>
@@ -131,7 +137,7 @@
 				</div>
 				<div class="panel-body">
 
-					<iframe height="600px" width="100%" src="http://www.mydr.com.au/respiratory-health/common-cold">
+					<iframe height="600px" width="100%" src='{{ name }}'>
 					<p>Your browser does not support iframes.</p>
 					</iframe>
 
