@@ -8,7 +8,7 @@ from wtforms import Form, TextField, TextAreaField, validators, StringField, Sub
 app = Flask(__name__) # create the application instance :)
 app.config.from_object(__name__) # load config from this file , app.py
 
-# Load default config and override config from an environment variable
+# Load default config and override config from an environment variable.
 app.config.update(dict(
     DATABASE=os.path.join(app.root_path, 'whicat.db'),
     SECRET_KEY='development key',
@@ -62,11 +62,11 @@ def close_db(error):
 
 @app.route("/process", methods = ["GET", "POST"] )
 def process_form():
-    #checked = request.form.getlist('Q1')
+    #checked = request.form.getlist('Q1').
     checked=request.form['Q1']
     with open('checked.txt','w') as file:
         file.write("%s"%checked)
-    # do something with checked array
+    # do something with checked array.
     return checked
 
 @app.route('/index')
